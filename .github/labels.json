@@ -1,0 +1,127 @@
+[
+  {
+    "name": "agent:ready",
+    "color": "0E8A16",
+    "description": "Issue siap dikerjakan; kriteria dan dependensi sudah jelas."
+  },
+  {
+    "name": "agent:in-progress",
+    "color": "1D76DB",
+    "description": "Implementer sedang mengerjakan issue atau revisi."
+  },
+  {
+    "name": "agent:in-review",
+    "color": "5319E7",
+    "description": "PR menunggu verifikasi Reviewer."
+  },
+  {
+    "name": "agent:changes-requested",
+    "color": "D93F0B",
+    "description": "Reviewer meminta perbaikan spesifik pada PR yang sama."
+  },
+  {
+    "name": "agent:approved",
+    "color": "0E8A16",
+    "description": "Lolos review; merge akhir tetap oleh manusia."
+  },
+  {
+    "name": "needs-human",
+    "color": "B60205",
+    "description": "Keputusan manusia diperlukan atau batas tiga putaran tercapai."
+  },
+  {
+    "name": "type:feature",
+    "color": "A2EEEF",
+    "description": "Fitur baru atau peningkatan perilaku pengguna."
+  },
+  {
+    "name": "type:bug",
+    "color": "D73A4A",
+    "description": "Perilaku salah atau regresi."
+  },
+  {
+    "name": "type:chore",
+    "color": "CFD3D7",
+    "description": "Fondasi, tooling, pemeliharaan, atau dokumentasi."
+  },
+  {
+    "name": "area:core",
+    "color": "C5DEF5",
+    "description": "Area core."
+  },
+  {
+    "name": "area:ui",
+    "color": "C5DEF5",
+    "description": "Area ui."
+  },
+  {
+    "name": "area:quran",
+    "color": "C5DEF5",
+    "description": "Area quran."
+  },
+  {
+    "name": "area:hadith",
+    "color": "C5DEF5",
+    "description": "Area hadith."
+  },
+  {
+    "name": "area:prayer",
+    "color": "C5DEF5",
+    "description": "Area prayer."
+  },
+  {
+    "name": "area:hijri",
+    "color": "C5DEF5",
+    "description": "Area hijri."
+  },
+  {
+    "name": "area:weather",
+    "color": "C5DEF5",
+    "description": "Area weather."
+  },
+  {
+    "name": "area:qibla",
+    "color": "C5DEF5",
+    "description": "Area qibla."
+  },
+  {
+    "name": "area:location",
+    "color": "C5DEF5",
+    "description": "Area location."
+  },
+  {
+    "name": "area:pwa",
+    "color": "C5DEF5",
+    "description": "Area pwa."
+  },
+  {
+    "name": "area:docs",
+    "color": "C5DEF5",
+    "description": "Area docs."
+  },
+  {
+    "name": "area:ci",
+    "color": "C5DEF5",
+    "description": "Area ci."
+  },
+  {
+    "name": "milestone:M0",
+    "color": "FBCA04",
+    "description": "Fondasi."
+  },
+  {
+    "name": "milestone:M1",
+    "color": "FBCA04",
+    "description": "Inti ibadah."
+  },
+  {
+    "name": "milestone:M2",
+    "color": "FBCA04",
+    "description": "Pelengkap."
+  },
+  {
+    "name": "milestone:M3",
+    "color": "FBCA04",
+    "description": "Kualitas dan rilis."
+  }
+]

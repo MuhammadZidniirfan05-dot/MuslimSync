@@ -1,0 +1,78 @@
+name: Fitur atau fondasi
+description: Rencanakan satu perubahan terukur untuk satu pull request.
+title: "[Feature] "
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Planner melengkapi scope dan kriteria sebelum memberi label agent:ready.
+        Untuk pekerjaan fondasi/dokumentasi, ganti type:feature menjadi type:chore saat triase.
+        Jangan masukkan API key, lokasi pribadi, atau data sensitif.
+  - type: textarea
+    id: context
+    attributes:
+      label: Konteks dan referensi
+      description: Jelaskan kebutuhan dan tautkan bagian PRD/arsitektur atau keputusan pengguna.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Perubahan yang harus dikerjakan dalam satu PR.
+    validations:
+      required: true
+  - type: textarea
+    id: exclusions
+    attributes:
+      label: Di luar scope
+      description: Sebutkan fitur, refactor, atau konfigurasi yang tidak boleh disentuh.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: File atau folder terkait
+      description: Daftar path konkret dan apakah perlu dibuat atau diubah.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Gunakan checklist bernomor AC-1 dan seterusnya dengan hasil yang dapat diuji.
+      placeholder: |
+        - [ ] AC-1 — Ketika ..., hasilnya ...; diverifikasi dengan ...
+        - [ ] AC-2 — Jika gagal/kosong ..., hasilnya ...
+    validations:
+      required: true
+  - type: textarea
+    id: technical
+    attributes:
+      label: Catatan teknis dan verifikasi
+      description: Model internal, endpoint teruji di docs/api-notes.md, edge case, atribusi, dan rencana test. Tulis tidak berlaku bila tidak terkait API.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependensi dan keputusan terbuka
+      description: Tautkan issue pendahulu, keputusan A1–A7 yang relevan, dan izin perubahan AGENTS/workflow jika diperlukan. Tulis tidak ada bila sudah jelas.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of Done
+      description: Checklist target penyelesaian; bukan pernyataan bahwa pekerjaan sudah selesai. Sesuaikan test dengan risiko perubahan.
+      value: |
+        - [ ] Semua acceptance criteria memiliki bukti verifikasi di PR.
+        - [ ] Lint, test, build, dan CI yang diwajibkan lulus; pengecualian dokumentasi dijelaskan.
+        - [ ] Test bermakna ditambah/diperbarui untuk perilaku yang berubah, atau alasan tidak berlaku dicatat.
+        - [ ] Tidak ada console.log debugging, secret, atau perubahan di luar scope.
+        - [ ] Loading/error/kosong, aksesibilitas, dan screenshot diperiksa jika UI berubah.
+        - [ ] Dokumentasi, sumber/atribusi API, dan dependensi diperbarui bila relevan.
+        - [ ] Review manusia tersedia bila menyentuh konten agama atau logika salat.
+    validations:
+      required: true

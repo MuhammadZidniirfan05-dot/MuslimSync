@@ -1,0 +1,98 @@
+name: Laporan bug
+description: Laporkan perilaku salah beserta reproduksi dan kriteria perbaikannya.
+title: "[Bug] "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Jika scope perbaikan belum diketahui, tulis belum diketahui; Planner melengkapinya sebelum agent:ready.
+        Hapus API key, koordinat pribadi, cookie, dan data sensitif dari bukti.
+  - type: textarea
+    id: context
+    attributes:
+      label: Konteks dan dampak
+      description: Fitur/FR yang terdampak, siapa yang mengalami, dan frekuensi kejadian.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Langkah reproduksi
+      placeholder: |
+        1. Buka ...
+        2. Lakukan ...
+        3. Amati ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Hasil yang diharapkan
+      description: Sertakan referensi PRD/arsitektur jika diketahui.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Hasil aktual dan bukti
+      description: Pesan error, screenshot, atau log yang sudah dibersihkan; jangan menebak penyebab.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Lingkungan
+      description: Browser/versi, OS, viewport, URL/commit aplikasi, online/offline, dan zona waktu/metode jika terkait salat. Jangan sertakan lokasi pribadi.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope perbaikan
+      description: Batas perubahan yang diperlukan; tulis belum diketahui bila perlu investigasi.
+    validations:
+      required: true
+  - type: textarea
+    id: exclusions
+    attributes:
+      label: Di luar scope
+      description: Perubahan atau refactor yang tidak termasuk perbaikan ini.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: File atau folder terkait
+      description: Path yang diketahui; tulis belum diketahui bila belum teridentifikasi.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] AC-1 — Langkah reproduksi menghasilkan perilaku yang diharapkan.
+        - [ ] AC-2 — Kasus regresi ... tetap berfungsi.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Catatan teknis, dependensi, dan keputusan terbuka
+      description: Fakta terverifikasi, rencana test, issue terkait, dan izin perubahan sensitif. Pisahkan dugaan dari bukti.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of Done
+      value: |
+        - [ ] Reproduksi dan bukti perbaikan untuk setiap acceptance criterion tersedia di PR.
+        - [ ] Test regresi bermakna ditambah bila sesuai, atau alasan tidak berlaku dijelaskan.
+        - [ ] Lint, test, build, dan CI wajib lulus; pemeriksaan yang tidak berlaku dijelaskan.
+        - [ ] Tidak ada console.log debugging, secret, atau refactor di luar scope.
+        - [ ] State UI dan aksesibilitas diperiksa jika terdampak.
+        - [ ] Dokumentasi/atribusi diperbarui dan review manusia dilakukan jika konten agama/logika salat berubah.
+    validations:
+      required: true
