@@ -2,7 +2,7 @@
 
 Status: **diterbitkan ke GitHub** — [Issue #1](https://github.com/MuhammadZidniirfan05-dot/MuslimSync/issues/1). ID M0 adalah ID perencanaan.
 Milestone tujuan: **M0 — Fondasi**.
-Label rencana: `type:chore`, `area:core`, `area:ci`, `milestone:M0`. Belum diberi `agent:ready`.
+Label: `type:chore`, `area:core`, `area:ci`, `milestone:M0`. Prasyarat publikasi dokumen dan izin CI telah dipenuhi; siap diberi `agent:ready` setelah sinkronisasi issue.
 
 ## Konteks
 
@@ -26,7 +26,7 @@ Path di atas adalah target perubahan, bukan klaim bahwa file sudah ada.
 
 ## Dependensi dan keputusan
 
-Tidak bergantung pada issue implementasi lain. Memerlukan repositori tujuan dan persetujuan pemilik untuk perubahan workflow CI dasar sesuai ARCHITECTURE §19. Permintaan perencanaan issue belum dianggap izin Implementer mengubah workflow.
+Tidak bergantung pada issue implementasi lain. Dokumen sumber telah dipublikasikan ke branch `main`. Pemilik telah mengizinkan CI dasar sesuai scope issue ini; lihat [catatan persetujuan](https://github.com/MuhammadZidniirfan05-dot/MuslimSync/issues/1#issuecomment-7121152514). Izin tidak mencakup deploy, otomatisasi agent, perubahan secret, atau merge otomatis. Implementer wajib merujuk persetujuan tersebut dalam PR.
 
 ## Acceptance criteria
 

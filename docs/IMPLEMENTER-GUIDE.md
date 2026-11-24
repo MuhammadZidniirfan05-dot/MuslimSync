@@ -6,7 +6,7 @@ Acuan wajib: [AGENTS.md](../AGENTS.md), [PRD](./PRD.md), [arsitektur](./ARCHITEC
 
 ## 1. Siapkan issue pertama
 
-Mulai dari [issue #1 — scaffold dan CI dasar](https://github.com/MuhammadZidniirfan05-dot/MuslimSync/issues/1). Pemeriksaan 24 November 2026: folder lokal belum menjadi repositori Git, GitHub belum memiliki default branch berisi sumber, dan issue #1 masih berlabel `needs-human`. Panduan ini belum menjalankan implementasi atau mengubah label.
+Mulai dari [issue #1 — scaffold dan CI dasar](https://github.com/MuhammadZidniirfan05-dot/MuslimSync/issues/1). Pembaruan 24 November 2026: dokumen/template telah dipublikasikan ke branch `main`, folder lokal telah menjadi repositori Git, dan [izin CI dasar](https://github.com/MuhammadZidniirfan05-dot/MuslimSync/issues/1#issuecomment-7121152514) telah dicatat. Prasyarat berikut sudah dipenuhi untuk issue #1; periksa status GitHub terbaru sebelum menjalankan prompt. Implementasi belum dimulai.
 
 Sebelum menyerahkan issue:
 
@@ -14,7 +14,7 @@ Sebelum menyerahkan issue:
 2. Berikan izin khusus untuk `.github/workflows/ci.yml` pada issue #1. Contoh komentar yang dapat Anda kirim sendiri: “Saya mengizinkan implementasi CI dasar dalam `.github/workflows/ci.yml` sesuai scope issue #1: install dari lockfile, lint, test, dan build. Izin ini tidak mencakup deploy, otomatisasi agent, atau perubahan secret.”
 3. Pastikan acceptance criteria jelas dan dependensi selesai. Setelah hambatan terselesaikan, hapus `needs-human` dan pasang `agent:ready`. Jangan menandai issue siap hanya karena sudah dibuat.
 
-Izin CI diperlukan oleh arsitektur §19 dan AGENTS.md. Teks contoh di atas belum merupakan izin sampai Anda menyatakannya. Keputusan API/hosting yang masih terbuka tidak menghalangi scaffold statis sesuai batas issue #1.
+Izin CI diperlukan oleh arsitektur §19 dan AGENTS.md. Untuk issue #1, izin telah diberikan melalui percakapan dan dicatat pada tautan di atas; tidak perlu diminta ulang untuk scope yang sama. Contoh komentar bukan izin umum untuk issue lain. Keputusan API/hosting yang masih terbuka tidak menghalangi scaffold statis sesuai batas issue #1.
 
 ## 2. Jalankan satu sesi Implementer
 
